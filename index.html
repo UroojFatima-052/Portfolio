@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Urooj Fatima — Software Engineering Student, ML Developer & Full-Stack Developer at SMIU, Karachi." />
+  <meta name="author" content="Urooj Fatima" />
+  <title>Urooj Fatima | Software Engineer & ML Developer</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="preloader-name">
+      <span class="pl" style="--i:0">U</span><span class="pl" style="--i:1">r</span><span class="pl" style="--i:2">o</span><span class="pl" style="--i:3">o</span><span class="pl" style="--i:4">j</span><span class="pl pl-space" style="--i:5">&nbsp;</span><span class="pl" style="--i:6">F</span><span class="pl" style="--i:7">a</span><span class="pl" style="--i:8">t</span><span class="pl" style="--i:9">i</span><span class="pl" style="--i:10">m</span><span class="pl" style="--i:11">a</span>
+    </div>
+    <div class="preloader-bar-container">
+      <div class="preloader-bar"></div>
+    </div>
+    <p class="preloader-text">Portfolio Loading…</p>
+  </div>
+</div>
+
+<!-- ANIMATED BACKGROUND -->
+<div class="bg-animated" aria-hidden="true">
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+</div>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a class="navbar-logo" href="#hero" aria-label="Urooj Fatima Home">UF<span>.</span></a>
+
+      <ul class="navbar-links" role="list">
+        <li><a href="#hero"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle Theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+    <i class="fas fa-times"></i>
+  </button>
+  <a href="#hero"     class="mobile-nav-link">Home</a>
+  <a href="#about"    class="mobile-nav-link">About</a>
+  <a href="#skills"   class="mobile-nav-link">Skills</a>
+  <a href="#services" class="mobile-nav-link">Services</a>
+  <a href="#projects" class="mobile-nav-link">Projects</a>
+  <a href="#contact"  class="mobile-nav-link">Contact</a>
+</nav>
+
+<main>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero" aria-label="Hero Introduction">
+  <div class="container">
+    <div class="hero-content">
+
+      <p class="hero-greeting">
+        <span class="greeting-line"></span>
+        Hello, I'm
+        <span class="greeting-line"></span>
+      </p>
+
+      <h1 class="hero-name">
+        <span class="name-highlight">Urooj Fatima</span>
+      </h1>
+
+      <div class="hero-typing-container" aria-live="polite">
+        <span class="typing-prefix">I'm a </span>
+        <span id="typing-text"></span><span class="cursor" aria-hidden="true"></span>
+      </div>
+
+      <p class="hero-description">
+        A <strong>Software Engineer</strong> and BS Software Engineering student at <strong>SMIU, Karachi</strong> — building
+        real-world web applications, machine learning systems, and data-driven solutions that
+        solve actual problems.
+      </p>
+
+      <div class="hero-cta">
+        <a href="assets/cv.pdf" class="btn btn-primary" download aria-label="Download CV">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+        <a href="#contact" class="btn btn-outline" aria-label="Hire Me">
+          <i class="fas fa-envelope"></i> Hire Me
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-count="4" data-suffix="+">0+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="5" data-suffix="+">0+</span>
+          <span class="stat-label">ML Models</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="3" data-suffix="+">0+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title" id="about-title">Who Am <span class="highlight">I?</span></h2>
+      <p class="section-subtitle">Passionate about building intelligent, real-world software solutions</p>
+    </div>
+
+    <!-- Quick stat strip -->
+    <div class="about-stats-strip reveal">
+      <div class="astrip-item">
+        <span class="astrip-val">4+</span>
+        <span class="astrip-key">Projects</span>
+      </div>
+      <div class="astrip-div"></div>
+      <div class="astrip-item">
+        <span class="astrip-val">5+</span>
+        <span class="astrip-key">ML Models</span>
+      </div>
+      <div class="astrip-div"></div>
+      <div class="astrip-item">
+        <span class="astrip-val">3+</span>
+        <span class="astrip-key">Years Learning</span>
+      </div>
+      <div class="astrip-div"></div>
+      <div class="astrip-item">
+        <span class="astrip-val">Open</span>
+        <span class="astrip-key">to Work</span>
+      </div>
+    </div>
+
+    <!-- Main about body -->
+    <div class="about-body">
+
+      <!-- Left — bio text -->
+      <div class="about-bio reveal-left">
+        <p class="about-intro">
+          I'm <strong>Urooj Fatima</strong>, a <strong>Software Engineer</strong> and BS Software Engineering
+          student at Sindh Madressatul Islam University (SMIU), Karachi.
+          I build real-world software: web applications, machine learning systems, and data-driven solutions
+          that solve actual problems.
+        </p>
+        <p class="about-intro">
+          My main domain is <strong>Software Engineering</strong> — writing clean, maintainable, production-ready
+          code. I specialize in Python, full-stack web development with Flask, and the AI / ML ecosystem.
+          I care about software that not only runs, but runs well.
+        </p>
+
+        <div class="about-actions">
+          <a href="assets/cv.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right — highlight cards -->
+      <div class="about-highlights reveal-right">
+        <div class="ahl-card">
+          <div class="ahl-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>Software Engineering</h4>
+          <p>Clean, maintainable, production-ready code. My core domain and primary identity.</p>
+        </div>
+        <div class="ahl-card">
+          <div class="ahl-icon"><i class="fas fa-brain"></i></div>
+          <h4>AI / ML</h4>
+          <p>End-to-end pipelines — NLP, classification, clustering, and time-series forecasting.</p>
+        </div>
+        <div class="ahl-card">
+          <div class="ahl-icon"><i class="fas fa-globe"></i></div>
+          <h4>Full-Stack Web</h4>
+          <p>Flask + SQLAlchemy backends with modern, responsive frontends.</p>
+        </div>
+        <div class="ahl-card">
+          <div class="ahl-icon"><i class="fas fa-chart-bar"></i></div>
+          <h4>Data Science</h4>
+          <p>EDA, feature engineering, and Streamlit dashboards that turn raw data into insight.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">My Skills</span>
+      <h2 class="section-title" id="skills-title">Technical <span class="highlight">Expertise</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p>
+    </div>
+
+    <div class="skills-content">
+      <div class="skills-bars reveal-left">
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-percent">92%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="92"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fab fa-html5"></i> HTML5 &amp; CSS3</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fas fa-flask"></i> Flask &amp; SQLAlchemy</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fas fa-brain"></i> scikit-learn &amp; PyTorch</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fas fa-table"></i> Pandas &amp; NumPy</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fas fa-comments"></i> NLP (VADER, RoBERTa)</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills-icons reveal-right">
+        <div class="skill-icon-card"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-icon-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-icon-card"><i class="fas fa-flask"></i><span>Flask</span></div>
+        <div class="skill-icon-card"><i class="fas fa-brain"></i><span>scikit-learn</span></div>
+        <div class="skill-icon-card"><i class="fas fa-fire"></i><span>PyTorch</span></div>
+        <div class="skill-icon-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+        <div class="skill-icon-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-icon-card"><i class="fas fa-chart-line"></i><span>Streamlit</span></div>
+        <div class="skill-icon-card"><i class="fas fa-table"></i><span>Pandas</span></div>
+        <div class="skill-icon-card"><i class="fas fa-cubes"></i><span>XGBoost</span></div>
+        <div class="skill-icon-card"><i class="fab fa-react"></i><span>React Native</span></div>
+        <div class="skill-icon-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">What I Do</span>
+      <h2 class="section-title" id="services-title">My <span class="highlight">Services</span></h2>
+      <p class="section-subtitle">End-to-end solutions across web, AI/ML, and data science</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-description">Full-stack web applications using HTML, CSS, JavaScript, and Python Flask with SQLAlchemy database integration.</p>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3 class="service-title">AI / ML Development</h3>
+        <p class="service-description">End-to-end ML pipelines — data collection, preprocessing, model training, evaluation, and deployment. Classification, clustering, NLP, and time-series forecasting.</p>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3 class="service-title">Data Science</h3>
+        <p class="service-description">Exploratory data analysis, feature engineering, and interactive Streamlit dashboards that turn raw data into clear insights.</p>
+      </div>
+      <div class="service-card reveal delay-4">
+        <div class="service-icon"><i class="fab fa-python"></i></div>
+        <h3 class="service-title">Python Development</h3>
+        <p class="service-description">Scripting, automation, data pipelines, and backend APIs. Clean, well-documented Python code.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Portfolio</span>
+      <h2 class="section-title" id="projects-title">My <span class="highlight">Projects</span></h2>
+      <p class="section-subtitle">Real-world projects built with Python, ML, and full-stack web technologies</p>
+    </div>
+
+    <div class="project-filters" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="ml">AI / ML</button>
+      <button class="filter-btn" data-filter="datascience">Data Science</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal delay-1" data-category="fullstack">
+        <div class="project-img" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+          <div class="proj-thumb" aria-hidden="true">
+            <div class="proj-thumb-bar"></div>
+            <div class="proj-thumb-dots"><span></span><span></span><span></span></div>
+            <div class="proj-thumb-icon-wrap" style="background:rgba(0,173,181,0.15);color:#00ADB5;border:1px solid rgba(0,173,181,0.3);">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <span class="proj-thumb-label" style="color:#00ADB5;">Full-Stack</span>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="proj-meta">
+            <p class="project-category">Full-Stack Platform</p>
+            <span class="type-badge type-project"><i class="fas fa-code-branch"></i> Project</span>
+          </div>
+          <h3 class="project-title">Zariya — Donation Middleware Platform</h3>
+          <p class="project-desc">Full-stack platform connecting donors with verified NGOs for donating physical items. Three-role system — Donor, NGO, Admin — with approval workflow, complaint management, and donation tracking.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">SQLAlchemy</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="proj-action-btn proj-visit">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal delay-2" data-category="ml">
+        <div class="project-img" style="background: linear-gradient(135deg, #1a0533, #3d1a78, #1a0533);">
+          <div class="proj-thumb" aria-hidden="true">
+            <div class="proj-thumb-bar"></div>
+            <div class="proj-thumb-dots"><span></span><span></span><span></span></div>
+            <div class="proj-thumb-icon-wrap" style="background:rgba(168,85,247,0.15);color:#a855f7;border:1px solid rgba(168,85,247,0.3);">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <span class="proj-thumb-label" style="color:#a855f7;">NLP / ML</span>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="proj-meta">
+            <p class="project-category">NLP / Machine Learning</p>
+            <span class="type-badge type-live"><i class="fas fa-signal"></i> ML</span>
+          </div>
+          <h3 class="project-title">Sentiment Analysis on Mobile Reviews</h3>
+          <p class="project-desc">Compared five ML classifiers on 10,000+ GSMArena reviews. Two labeling pipelines: VADER+TextBlob and RoBERTa. Bi-LSTM deep model. Live prediction dashboard on Hugging Face.</p>
+          <div class="project-tech">
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">scikit-learn</span>
+            <span class="tech-badge">NLP</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="proj-action-btn proj-visit">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal delay-3" data-category="datascience">
+        <div class="project-img" style="background: linear-gradient(135deg, #0d2b1a, #145a32, #0d2b1a);">
+          <div class="proj-thumb" aria-hidden="true">
+            <div class="proj-thumb-bar"></div>
+            <div class="proj-thumb-dots"><span></span><span></span><span></span></div>
+            <div class="proj-thumb-icon-wrap" style="background:rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.25);">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="proj-thumb-label" style="color:#4ade80;">Data Science</span>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="proj-meta">
+            <p class="project-category">Clustering / Data Science</p>
+            <span class="type-badge type-portfolio"><i class="fas fa-chart-pie"></i> DS</span>
+          </div>
+          <h3 class="project-title">Customer Segmentation</h3>
+          <p class="project-desc">K-Means clustering on mall customer transaction data. Engineered spending and frequency features, Elbow Method for K=3, PCA for visualization, clusters mapped to marketing strategies.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">K-Means</span>
+            <span class="tech-badge">PCA</span>
+            <span class="tech-badge">Matplotlib</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="proj-action-btn proj-visit">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal delay-4" data-category="ml">
+        <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
+          <div class="proj-thumb" aria-hidden="true">
+            <div class="proj-thumb-bar"></div>
+            <div class="proj-thumb-dots"><span></span><span></span><span></span></div>
+            <div class="proj-thumb-icon-wrap" style="background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <span class="proj-thumb-label" style="color:#fbbf24;">Forecasting</span>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="project-link-btn" title="View on GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="proj-meta">
+            <p class="project-category">Time-Series Forecasting</p>
+            <span class="type-badge type-project"><i class="fas fa-code-branch"></i> ML</span>
+          </div>
+          <h3 class="project-title">Energy Consumption Forecasting</h3>
+          <p class="project-desc">Compared ARIMA, Prophet, and XGBoost for short-term household energy forecasting. Full pipeline from raw data through feature engineering to visualization. XGBoost achieved best MAE and RMSE.</p>
+          <div class="project-tech">
+            <span class="tech-badge">XGBoost</span>
+            <span class="tech-badge">Prophet</span>
+            <span class="tech-badge">ARIMA</span>
+            <span class="tech-badge">Pandas</span>
+          </div>
+          <div class="project-links-row">
+            <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="proj-action-btn proj-visit">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title" id="contact-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="section-subtitle">Have a project or want to collaborate? I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or contributions. Feel free to reach out!</p>
+
+        <div class="contact-items">
+          <a href="tel:+923363110428" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">Phone</span>
+              <span class="contact-item-value">0336-3110428</span>
+            </div>
+          </a>
+          <a href="mailto:uroojfatima6789@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">uroojfatima6789@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/UroojFatima-052" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-value">github.com/UroojFatima-052</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/urooj-022-fatima" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-value">linkedin.com/in/urooj-022-fatima</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-info">
+              <span class="contact-item-label">Location</span>
+              <span class="contact-item-value">Karachi, Sindh, Pakistan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/UroojFatima-052"           target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/urooj-022-fatima" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:uroojfatima6789@gmail.com"             class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal-right">
+        <h3 class="form-title">Send Me a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name <span style="color:var(--primary)">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" autocomplete="name" />
+            <span class="error-msg" id="nameError">Please enter your name (at least 2 characters).</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address <span style="color:var(--primary)">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" />
+            <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message <span style="color:var(--primary)">*</span></label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..."></textarea>
+            <span class="error-msg" id="messageError">Please enter a message (at least 10 characters).</span>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess" role="alert">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-logo">UF.</div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#hero"     class="footer-link">Home</a>
+      <a href="#about"    class="footer-link">About</a>
+      <a href="#skills"   class="footer-link">Skills</a>
+      <a href="#projects" class="footer-link">Projects</a>
+      <a href="#contact"  class="footer-link">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://github.com/UroojFatima-052"           target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/urooj-022-fatima" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:uroojfatima6789@gmail.com"             aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">&copy; 2025 <span>Urooj Fatima</span>. All rights reserved. | Designed with <span>&#9829;</span> in Karachi, Pakistan.</p>
+  </div>
+</footer>
+
+<button id="scrollTopBtn" aria-label="Scroll to top" title="Back to Top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="main.js"></script>
+</body>
+</html>
