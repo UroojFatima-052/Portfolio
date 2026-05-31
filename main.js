@@ -151,7 +151,7 @@ function triggerSkillBars() {
   if (!skillsSection) return;
   const rect = skillsSection.getBoundingClientRect();
   const inView = rect.top < window.innerHeight * 0.85 && rect.bottom > 0;
-  document.querySelectorAll('.skill-fill[data-width]').forEach(bar => {
+  document.querySelectorAll('.scc-fill[data-width]').forEach(bar => {
     bar.style.width = inView ? bar.dataset.width + '%' : '0%';
   });
 }
