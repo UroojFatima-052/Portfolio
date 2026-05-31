@@ -5,24 +5,24 @@
    ============================================ */
 :root {
   --primary:        #FB7185;
-  --primary-glow:   rgba(251,113,133,0.25);
-  --primary-light:  rgba(251,113,133,0.08);
-  --bg-dark:        #111318;
-  --bg-card:        #1c1f26;
-  --bg-card-light:  rgba(28,31,38,0.6);
+  --primary-glow:   rgba(251,113,133,0.3);
+  --primary-light:  rgba(251,113,133,0.1);
+  --bg-dark:        #0c0a14;
+  --bg-card:        #15121e;
+  --bg-card-light:  rgba(21,18,30,0.6);
   --text-light:     #EEEEEE;
   --text-muted:     rgba(238,238,238,0.6);
   --text-dim:       rgba(238,238,238,0.35);
-  --glass-bg:       rgba(28,31,38,0.55);
-  --glass-border:   rgba(251,113,133,0.14);
-  --glass-shadow:   0 8px 32px rgba(0,0,0,0.5);
+  --glass-bg:       rgba(255,255,255,0.05);
+  --glass-border:   rgba(255,255,255,0.1);
+  --glass-shadow:   0 8px 40px rgba(0,0,0,0.45);
   --transition:     all 0.3s cubic-bezier(0.4,0,0.2,1);
   --border-radius:  16px;
   --border-radius-sm: 8px;
   --font-primary:   'Poppins', sans-serif;
   --font-secondary: 'Inter', sans-serif;
   --font-heading:   'Montserrat', sans-serif;
-  --shadow-neon:    0 0 16px rgba(251,113,133,0.3), 0 0 32px rgba(251,113,133,0.1);
+  --shadow-neon:    0 0 20px rgba(251,113,133,0.4), 0 0 40px rgba(251,113,133,0.15);
   --shadow-card:    0 20px 60px rgba(0,0,0,0.5);
 }
 
@@ -31,15 +31,15 @@
   --primary-glow:  rgba(225,29,72,0.35);
   --primary-light: rgba(225,29,72,0.1);
   --shadow-neon:   0 0 20px rgba(225,29,72,0.4), 0 0 40px rgba(225,29,72,0.15);
-  --bg-dark:       #fff1f2;
-  --bg-card:       #ffe4e6;
-  --bg-card-light: rgba(255,228,230,0.8);
+  --bg-dark:       #fdf2f8;
+  --bg-card:       #fce7f3;
+  --bg-card-light: rgba(252,231,243,0.8);
   --text-light:    #1a0a0e;
-  --text-muted:    rgba(26,10,14,0.7);
-  --text-dim:      rgba(26,10,14,0.45);
-  --glass-bg:      rgba(255,255,255,0.65);
-  --glass-border:  rgba(225,29,72,0.22);
-  --glass-shadow:  0 8px 32px rgba(0,0,0,0.08);
+  --text-muted:    rgba(26,10,14,0.68);
+  --text-dim:      rgba(26,10,14,0.42);
+  --glass-bg:      rgba(255,255,255,0.55);
+  --glass-border:  rgba(225,29,72,0.18);
+  --glass-shadow:  0 8px 32px rgba(0,0,0,0.07);
 }
 
 /* ============================================
@@ -54,6 +54,31 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Fixed gradient that shows through all transparent sections */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 0%,   rgba(251,113,133,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 55% at 100% 100%, rgba(124,58,237,0.16)  0%, transparent 55%),
+    radial-gradient(ellipse 60% 45% at 100% 0%,  rgba(0,229,255,0.08)   0%, transparent 50%),
+    radial-gradient(ellipse 55% 45% at 0% 100%,  rgba(251,113,133,0.10) 0%, transparent 50%),
+    linear-gradient(135deg, #0c0a14 0%, #100d1a 40%, #0a0c18 100%);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+[data-theme="light"] body::before {
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 0%,   rgba(225,29,72,0.12)   0%, transparent 55%),
+    radial-gradient(ellipse 70% 55% at 100% 100%, rgba(168,85,247,0.1)  0%, transparent 55%),
+    radial-gradient(ellipse 60% 45% at 100% 0%,  rgba(56,189,248,0.08)  0%, transparent 50%),
+    radial-gradient(ellipse 55% 45% at 0% 100%,  rgba(225,29,72,0.08)  0%, transparent 50%),
+    linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #f0e6ff 100%);
 }
 a    { text-decoration:none; color:inherit; }
 ul   { list-style:none; }
@@ -132,14 +157,12 @@ button { font-family:inherit; }
 }
 .bg-blob {
   position:absolute; border-radius:50%;
-  filter:blur(100px); opacity:0.05;
+  filter:blur(90px); opacity:0;
   animation:blobFloat 20s ease-in-out infinite;
 }
 .bg-blob-1 { width:600px;height:600px;background:var(--primary);top:-200px;right:-100px; }
-.bg-blob-2 { width:400px;height:400px;background:#6c63ff;bottom:100px;left:-100px;animation-delay:-7s; }
-.bg-blob-3 { width:300px;height:300px;background:var(--primary);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:-14s; }
-
-[data-theme="light"] .bg-blob { opacity:0.12; filter:blur(80px); }
+.bg-blob-2 { width:400px;height:400px;background:#7c3aed;bottom:100px;left:-100px;animation-delay:-7s; }
+.bg-blob-3 { width:300px;height:300px;background:#00e5ff;top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:-14s; }
 @keyframes blobFloat {
   0%,100%{ transform:translate(0,0) scale(1); }
   33%    { transform:translate(30px,-20px) scale(1.05); }
@@ -263,7 +286,7 @@ button { font-family:inherit; }
 /* ============================================
    SHARED SECTION STYLES
    ============================================ */
-section { padding:100px 0; position:relative; background-color:var(--bg-dark); margin-bottom:-1px; }
+section { padding:100px 0; position:relative; background:transparent; }
 .container { max-width:1200px; margin:0 auto; padding:0 2rem; }
 
 .section-header { text-align:center; margin-bottom:4rem; }
@@ -495,8 +518,9 @@ section { padding:100px 0; position:relative; background-color:var(--bg-dark); m
 .about-highlights { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
 .ahl-card {
   padding:1.4rem 1.2rem; border-radius:14px;
-  background:var(--glass-bg); backdrop-filter:blur(10px);
+  background:var(--glass-bg); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
   border:1px solid var(--glass-border);
+  box-shadow:0 4px 24px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
   transition:var(--transition); position:relative; overflow:hidden;
 }
 .ahl-card::before {
@@ -603,8 +627,9 @@ section { padding:100px 0; position:relative; background-color:var(--bg-dark); m
 .services-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
 .service-card {
   padding:2.5rem 2rem; border-radius:var(--border-radius);
-  background:var(--glass-bg); backdrop-filter:blur(15px);
+  background:var(--glass-bg); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
   border:1px solid var(--glass-border);
+  box-shadow:0 4px 24px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.07);
   transition:var(--transition); position:relative; overflow:hidden; text-align:center;
 }
 .service-card::before {
@@ -642,8 +667,9 @@ section { padding:100px 0; position:relative; background-color:var(--bg-dark); m
 .projects-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; }
 .project-card {
   border-radius:var(--border-radius);
-  background:var(--glass-bg); backdrop-filter:blur(15px);
+  background:var(--glass-bg); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
   border:1px solid var(--glass-border); overflow:hidden;
+  box-shadow:0 4px 24px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.06);
   transition:var(--transition); display:flex; flex-direction:column;
 }
 .project-card:hover { border-color:var(--primary); transform:translateY(-8px); box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 30px rgba(0,173,181,0.15); }
@@ -744,8 +770,9 @@ section { padding:100px 0; position:relative; background-color:var(--bg-dark); m
 .social-link:hover { background:var(--primary); color:#fff; border-color:var(--primary); box-shadow:0 0 20px rgba(0,173,181,0.4); transform:translateY(-3px); }
 .contact-form-card {
   padding:2.5rem; border-radius:var(--border-radius);
-  background:var(--glass-bg); backdrop-filter:blur(15px);
-  border:1px solid var(--glass-border); box-shadow:var(--glass-shadow);
+  background:var(--glass-bg); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+  border:1px solid var(--glass-border);
+  box-shadow:0 8px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
 }
 .form-title { font-family:var(--font-heading); font-size:1.3rem; font-weight:700; color:var(--text-light); margin-bottom:1.8rem; }
 .form-group { margin-bottom:1.4rem; }
@@ -783,7 +810,9 @@ section { padding:100px 0; position:relative; background-color:var(--bg-dark); m
    ============================================ */
 footer {
   border-top:1px solid var(--glass-border);
-  padding:3rem 0; background:var(--bg-card);
+  padding:3rem 0;
+  background:var(--glass-bg);
+  backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
 }
 .footer-inner {
   max-width:1200px; margin:0 auto; padding:0 2rem;
