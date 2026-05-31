@@ -4,7 +4,7 @@ A personal portfolio website built with pure HTML, CSS, and JavaScript. No frame
 
 ## Live Site
 
-Deployed on Netlify: *(add your URL here after deployment)*
+Deployed on Netlify: *https://uroojfatimaa.netlify.app/*
 
 ## Sections
 
