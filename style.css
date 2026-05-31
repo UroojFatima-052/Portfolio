@@ -263,7 +263,7 @@ button { font-family:inherit; }
 /* ============================================
    SHARED SECTION STYLES
    ============================================ */
-section { padding:100px 0; position:relative; }
+section { padding:100px 0; position:relative; background-color:var(--bg-dark); margin-bottom:-1px; }
 .container { max-width:1200px; margin:0 auto; padding:0 2rem; }
 
 .section-header { text-align:center; margin-bottom:4rem; }
